@@ -1,45 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inline Elements Example</title>
     <style>
-        .inline-element {
-            background-color: lightgreen;
-            margin: 0 5px;
-            padding: 2px 5px;
-        }
-        .block-element {
-            background-color: lightblue;
-            margin: 10px 0;
-            padding: 10px;
-        }
+      .inline-element {
+        background-color: lightgreen;
+        margin: 0 5px;
+        padding: 2px 5px;
+      }
+      .block-element {
+        background-color: lightblue;
+        margin: 10px 0;
+        padding: 10px;
+      }
+      td,
+      th {
+        border: 2px solid red;
+      }
+      table {
+        border-collapse: collapse;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <p>
-        This is a paragraph with an inline element: 
-        <span class="inline-element">This is an inline span</span> 
-        and another inline element: 
-        <a href="#" class="inline-element">This is an inline link</a>.
+      This is a paragraph with an inline element:
+      <span class="inline-element">This is an inline span</span>
+      and another inline element:
+      <a href="#" class="inline-element">This is an inline link</a>.
     </p>
     <p>
-        Inline elements can contain text and other inline elements:
-        <span class="inline-element">
-            This is an inline span with 
-            <strong class="inline-element">another inline element</strong> inside it.
-        </span>
+      Inline elements can contain text and other inline elements:
+      <span class="inline-element">
+        This is an inline span with
+        <strong class="inline-element">another inline element</strong> inside
+        it.
+      </span>
     </p>
     <p>
-        <!-- Incorrect usage: block element inside an inline element -->
-        Inline elements cannot contain block elements:
-        <span class="inline-element">
-            This is an inline span with an attempt to include a block element:
-            <!-- This is invalid HTML and will result in unexpected rendering -->
-            <div class="block-element">This is a block div inside an inline span (invalid).</div>
-            sdhjkds
-        </span>
+      <!-- Incorrect usage: block element inside an inline element -->
+      Inline elements cannot contain block elements:
+      <span class="inline-element">
+        This is an inline span with an attempt to include a block element:
+        <!-- This is invalid HTML and will result in unexpected rendering -->
+        <div class="block-element">
+          This is a block div inside an inline span (invalid).
+        </div>
+        sdhjkds
+      </span>
     </p>
-</body>
+
+    <table>
+      <tr>
+        <th>one</th>
+        <th>Two</th>
+        <th>Three</th>
+      </tr>
+      <tr>
+        <td>abc</td>
+        <td>def</td>
+        <td>ghi</td>
+      </tr>
+      <tr>
+        <td>jkl</td>
+        <td>mno</td>
+        <td>pqr</td>
+      </tr>
+      <tr>
+        <td>stu</td>
+        <td>vwx</td>
+        <td>yzz</td>
+      </tr>
+    </table>
+  </body>
 </html>
