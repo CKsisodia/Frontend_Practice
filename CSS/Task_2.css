@@ -1,0 +1,13 @@
+/* General rule for all paragraphs */
+p {
+    color: blue;
+}
+/* More specific rule for paragraphs with the class 'special' */
+.special {
+    color: red;
+}
+/* Even more specific rule for a paragraph with the ID 'unique' */
+#unique {
+    color: green;
+}
+/* Inline style (highest priority) */
